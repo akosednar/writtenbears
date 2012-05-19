@@ -175,7 +175,7 @@ function fetch_next_kitten() {
     $("#titleKitten").html("<strike>Bears!</strike>");
     $("#titleSearch").html("&nbsp;" + search + "!");
   } else {
-    search = "bear";
+    search = "bear,cute";
   }
 
   var flickr_url = "http://api.flickr.com/services/rest/?format=json&sort=interestingness-desc&method=flickr.photos.search&license=4&extras=owner_name&tags=" + search + "&tag_mode=all&api_key=5dfc80756edad8d0566cf40f0909324e&jsoncallback=?";
@@ -271,7 +271,7 @@ Written Bears is based off of Written Kitten which was created by <a href="http:
 We like positive reinforcement, so we decided to make something a bit like <a href="http://writeordie.com">writeordie</a> but
 cuter and fuzzier.
 
-Images are randomly selected from Flickr&apos;s &ldquo;most interesting&rdquo; photos matching the tags &ldquo;bear&rdquo;.
+Images are randomly selected from Flickr&apos;s &ldquo;most interesting&rdquo; photos matching the tags &ldquo;bear&rdquo;cute&ldquo;.
 
 Enjoy!
 	</p>
